@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>You Hacked</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: black;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+        }
+
+        .animated-text {
+            font-size: 5rem;
+            font-weight: bold;
+            animation: colorChange 1s infinite;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+            margin: 20px;
+        }
+
+        @keyframes colorChange {
+            0% { color: red; }
+            25% { color: orange; }
+            50% { color: yellow; }
+            75% { color: green; }
+            100% { color: blue; }
+        }
+
+        .devil-image {
+            width: 150px; /* Adjust size as needed */
+            height: auto;
+            animation: bounce 1s infinite alternate;
+        }
+
+        @keyframes bounce {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-20px); }
+        }
+    </style>
+</head>
+<body>
+    <div class="animated-text">You Hacked</div>
+    
+</body>
+</html>
